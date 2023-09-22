@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== 'production') { 
+    require('dotenv').config(); 
+} 
 const express = require('express');
 const session = require('cookie-session');
 const { PORT, SERVER_SESSION_SECRET } = require('./config.js');
